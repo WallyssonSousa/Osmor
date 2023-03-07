@@ -1,0 +1,116 @@
+:root {
+    --corDeFunco: #0c0d0e;
+    --roxo: #B826FF;
+    --laranja: #FFAE00;
+    --fontPrincipal: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--corDeFunco);
+}
+
+*{
+    background-color: var(--corDeFunco);
+    font-family: var(--fontPrincipal);
+}
+
+.container--sobre {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+#efeito-maquina {
+    position: relative;
+    top: 0.5em;
+    font-size: 2.5em;
+    font-family: var(--font-efeito);
+    color: aliceblue;
+}
+
+#efeito-maquina::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+.container--sobre--texto {
+    max-width: 70%;
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    margin: 5.5em 0;
+}
+
+.container-equipe{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 50px;
+}
+
+.card-container{
+    width: 12rem;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.img-card{
+    width: 12rem;
+    border-radius: 10px;
+}
+
+.card-text{
+    padding: 50px;
+    text-align: center;
+}
+
+.card-legenda{
+    color: #FFAE00;
+}
+
+.icon-card{
+    padding: 0 5px;
+}
+
+
+.container-blog{
+    display: grid;
+    place-items: center;
+    margin: 10rem;
+}
+
+.card-blog{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-header{
+    font-size: 24px;
+}
+
+.body-card-text{
+    text-align: center;
+}
+
+.footer-body{
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.footer-text{
+    color: #FFAE00;
+}
+
+.footer-img{
+    margin: 0 10px;
+    width: 24px;
+    height: 24px;
+}
+
+
